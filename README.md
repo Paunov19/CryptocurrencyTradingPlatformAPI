@@ -26,7 +26,7 @@ This is a RESTful API-based **Cryptocurrency Trading Platform** built using **Sp
 - **Maven** for building the project
 - **MySQL** (or your preferred database)
 - **Swagger UI** for API documentation
-- **IntelliJ IDEA** or any other Java IDE
+- **JWT (JSON Web Tokens)**
 
 ---
 
@@ -78,7 +78,8 @@ Open the Swagger UI in your browser for interactive API documentation:
 
 http://localhost:8080/swagger-ui.html
 
-In Swagger, we can manually test all API endpoints. Each endpoint requires specific request data. Follow the details provided for each request to ensure you send the correct input.
+In Swagger, we can manually test all API endpoints. Each endpoint requires specific request data. Follow the details provided for each request to ensure you send the correct input. 
+After successful login with user credentials at /api/user/login, a token will be sent. In Swagger UI, click Authorize at the top-right and paste the token into the Bearer Token field. Click Authorize to authenticate and access protected endpoints.
 
 ## **External Libraries and Tools Used**
 - Spring Boot: Simplifies application setup and development.
